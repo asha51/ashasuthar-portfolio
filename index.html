@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asha Suthar - Senior Frontend Engineer & Content Creator. Explore collaborations for IT products and events through Beyond The Console.">
+    <title>Asha Suthar | Senior Frontend Engineer & Tech Content Creator</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-['Inter']">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold font-['Poppins'] gradient-text">Asha Suthar</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#youtube" class="nav-link">YouTube</a>
+                    <a href="#collaborate" class="nav-link">Collaborate</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-indigo-600" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#youtube" class="mobile-nav-link">YouTube</a>
+                <a href="#collaborate" class="mobile-nav-link">Collaborate</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 animate-fade-in-up">
+                    <div class="inline-block">
+                        <span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold">
+                            <i class="fas fa-code"></i> Senior Frontend Engineer
+                        </span>
+                    </div>
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold font-['Poppins'] leading-tight">
+                        Hi, I'm <span class="gradient-text">Asha Suthar</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Building exceptional digital experiences and sharing knowledge through 
+                        <span class="font-semibold text-red-600">Beyond The Console</span> - 
+                        Your gateway to IT collaborations and tech innovations.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#collaborate" class="btn-primary">
+                            <i class="fas fa-handshake mr-2"></i>Let's Collaborate
+                        </a>
+                        <a href="#youtube" class="btn-secondary">
+                            <i class="fab fa-youtube mr-2"></i>Watch My Channel
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-4 pt-6">
+                        <a href="https://www.youtube.com/@beyondtheconsole" target="_blank" class="social-icon youtube-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-icon github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon linkedin-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:contact@ashasuthar.dev" class="social-icon email-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative animate-fade-in">
+                    <div class="relative z-10">
+                        <div class="aspect-square rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 p-1 shadow-2xl">
+                            <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
+                                <div class="text-center p-8">
+                                    <div class="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-6xl font-bold">
+                                        AS
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Asha Suthar</h3>
+                                    <p class="text-gray-600">Senior Frontend Engineer</p>
+                                    <p class="text-indigo-600 font-semibold mt-2">Beyond The Console</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
+                    <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-400 rounded-full opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Professional Journey & Passion</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-gray-800">Senior Frontend Engineer</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        With extensive experience in frontend development, I specialize in creating beautiful, 
+                        performant, and user-centric web applications. My expertise spans modern JavaScript 
+                        frameworks, responsive design, and cutting-edge web technologies.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Through my YouTube channel <span class="font-semibold text-red-600">Beyond The Console</span>, 
+                        I share insights, tutorials, and tech discussions to help developers grow and stay updated 
+                        with the latest in web development and IT innovations.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-6">
+                        <div class="stat-card">
+                            <div class="text-4xl font-bold gradient-text mb-2">8+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="text-4xl font-bold gradient-text mb-2">50+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-blue-100 text-blue-600">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Frontend Excellence</h4>
+                            <p class="text-gray-600 text-sm">Expert in React, Vue, Angular, and modern web technologies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-red-100 text-red-600">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Content Creation</h4>
+                            <p class="text-gray-600 text-sm">Sharing knowledge and insights through Beyond The Console</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-green-100 text-green-600">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Collaboration Ready</h4>
+                            <p class="text-gray-600 text-sm">Open for IT product partnerships and event collaborations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-purple-100 text-purple-600">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Innovation Focus</h4>
+                            <p class="text-gray-600 text-sm">Always exploring and implementing cutting-edge solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies & Expertise</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="skill-category-icon bg-blue-100 text-blue-600">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Frontend Development</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">React.js</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-blue-600" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Vue.js</span>
+                                <span class="text-gray-600">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-green-600" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">JavaScript/TypeScript</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-yellow-600" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">HTML5/CSS3</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-orange-600" style="width: 98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Framework -->
+                <div class="skill-category">
+                    <div class="skill-category-icon bg-purple-100 text-purple-600">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Tools & Frameworks</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Tailwind CSS</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-cyan-600" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Webpack/Vite</span>
+                                <span class="text-gray-600">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-indigo-600" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Git/GitHub</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-gray-600" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">REST APIs</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-pink-600" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="skill-category">
+                    <div class="skill-category-icon bg-green-100 text-green-600">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Other Expertise</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">UI/UX Design</span>
+                                <span class="text-gray-600">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-pink-600" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Performance Optimization</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-red-600" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Responsive Design</span>
+                                <span class="text-gray-600">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-teal-600" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold text-gray-700">Content Creation</span>
+                                <span class="text-gray-600">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill bg-red-600" style="width: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section id="youtube" class="py-20 bg-gradient-to-br from-red-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">
+                    <i class="fab fa-youtube text-red-600"></i> Beyond The Console
+                </h2>
+                <p class="section-subtitle">Tech Tutorials, Insights & Collaborations</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block px-6 py-3 bg-red-100 text-red-700 rounded-full font-semibold">
+                        <i class="fab fa-youtube mr-2"></i>YouTube Channel
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-800">
+                        Join the <span class="text-red-600">Beyond The Console</span> Community
+                    </h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Subscribe to my YouTube channel where I share in-depth tutorials, tech insights, 
+                        product reviews, and discussions about the latest trends in frontend development 
+                        and IT innovations.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Educational Content</h4>
+                                <p class="text-gray-600 text-sm">Step-by-step tutorials and coding sessions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Tech Insights</h4>
+                                <p class="text-gray-600 text-sm">Industry trends and best practices</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Product Reviews</h4>
+                                <p class="text-gray-600 text-sm">Honest reviews of IT products and tools</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <a href="https://www.youtube.com/@beyondtheconsole" target="_blank" class="inline-flex items-center px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i class="fab fa-youtube mr-3 text-2xl"></i>
+                            Subscribe to Channel
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- YouTube Stats -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                            <div class="text-3xl font-bold text-red-600 mb-2">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-800">Videos</div>
+                            <div class="text-gray-600 mt-1">Quality Content</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                            <div class="text-3xl font-bold text-red-600 mb-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-800">Community</div>
+                            <div class="text-gray-600 mt-1">Growing Fast</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Placeholder -->
+                    <div class="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl aspect-video">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <a href="https://www.youtube.com/@beyondtheconsole" target="_blank" 
+                               class="w-24 h-24 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-all transform hover:scale-110 shadow-lg">
+                                <i class="fab fa-youtube text-4xl"></i>
+                            </a>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                            <h4 class="text-white font-semibold text-lg">Latest Tutorials & Tech Talks</h4>
+                            <p class="text-gray-300 text-sm mt-1">Click to visit the channel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Channel Topics -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow">Frontend Development</span>
+                        <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow">React & Vue</span>
+                        <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow">Web Performance</span>
+                        <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow">UI/UX Tips</span>
+                        <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow">IT Products</span>
+                        <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow">Tech Events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section id="collaborate" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Let's Collaborate</h2>
+                <p class="section-subtitle">Open for IT Product Partnerships & Event Collaborations</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="collab-card">
+                    <div class="collab-icon bg-blue-100 text-blue-600">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Product Reviews</h3>
+                    <p class="text-gray-600 mb-4">
+                        Honest, in-depth reviews of IT products, tools, and software for your audience
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Detailed feature analysis</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Hands-on demonstrations</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Developer perspective</li>
+                    </ul>
+                </div>
+                
+                <div class="collab-card">
+                    <div class="collab-icon bg-purple-100 text-purple-600">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Event Partnerships</h3>
+                    <p class="text-gray-600 mb-4">
+                        Speaking engagements, workshops, and tech event collaborations
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Technical workshops</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Conference speaking</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Panel discussions</li>
+                    </ul>
+                </div>
+                
+                <div class="collab-card">
+                    <div class="collab-icon bg-green-100 text-green-600">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Brand Collaborations</h3>
+                    <p class="text-gray-600 mb-4">
+                        Long-term partnerships with IT brands and developer-focused companies
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Sponsored content</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Product ambassadorship</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Custom campaigns</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Why Collaborate -->
+            <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Why Collaborate With Me?</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold gradient-text mb-2">8+</div>
+                        <div class="text-gray-600 font-semibold">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold gradient-text mb-2">Tech</div>
+                        <div class="text-gray-600 font-semibold">Focused Audience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold gradient-text mb-2">Pro</div>
+                        <div class="text-gray-600 font-semibold">Quality Content</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold gradient-text mb-2">100%</div>
+                        <div class="text-gray-600 font-semibold">Authentic Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your collaboration ideas</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">Company/Organization</label>
+                            <input type="text" id="company" name="company" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label for="collab-type" class="block text-sm font-semibold text-gray-700 mb-2">Collaboration Type *</label>
+                            <select id="collab-type" name="collab-type" required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                                <option value="">Select type...</option>
+                                <option value="product-review">Product Review</option>
+                                <option value="event-speaking">Event Speaking</option>
+                                <option value="brand-partnership">Brand Partnership</option>
+                                <option value="workshop">Workshop/Training</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                                  placeholder="Tell me about your collaboration idea..."></textarea>
+                    </div>
+                    
+                    <div class="text-center pt-4">
+                        <button type="submit" class="btn-primary px-12 py-4 text-lg">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Success Message -->
+                <div id="success-message" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        <div>
+                            <h4 class="font-semibold text-green-800">Message Sent Successfully!</h4>
+                            <p class="text-green-700 text-sm">Thank you for reaching out. I'll get back to you soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-12 grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600 text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Email</h4>
+                    <p class="text-gray-600">contact@ashasuthar.dev</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 text-red-600 text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-1">YouTube</h4>
+                    <p class="text-gray-600">@beyondtheconsole</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-1">LinkedIn</h4>
+                    <p class="text-gray-600">Connect with me</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold font-['Poppins'] mb-4">Asha Suthar</h3>
+                    <p class="text-gray-400 mb-4">
+                        Senior Frontend Engineer & Content Creator at Beyond The Console. 
+                        Building exceptional web experiences and sharing knowledge with the tech community.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.youtube.com/@beyondtheconsole" target="_blank" class="footer-social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="footer-social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="footer-social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:contact@ashasuthar.dev" class="footer-social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="#youtube" class="text-gray-400 hover:text-white transition-colors">YouTube</a></li>
+                        <li><a href="#collaborate" class="text-gray-400 hover:text-white transition-colors">Collaborate</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Collaborate</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#collaborate" class="text-gray-400 hover:text-white transition-colors">Product Reviews</a></li>
+                        <li><a href="#collaborate" class="text-gray-400 hover:text-white transition-colors">Event Speaking</a></li>
+                        <li><a href="#collaborate" class="text-gray-400 hover:text-white transition-colors">Brand Partnerships</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Asha Suthar. All rights reserved. | Built with passion for the tech community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-8 right-8 w-12 h-12 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 opacity-0 pointer-events-none z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
